@@ -28,7 +28,8 @@ You should use the file like this:
 The node_set_id is the id of element that you want to put the Catalogue     
 The node_get_id which can be null is the id of element which you want to Generate Catalogue.     
 If node_get_id is null, and it will be replace by document.body.     
-> Note that I change the url which contains "#" so you'd better check if your url contains "#"
+> Note that I change the url which contains "#" so you'd better check if your url contains "#"     
+
 > Note that although the js takes the condition the disorder of tag h1~h6, you're still recommended to put the right order.
 
 It works when you convert .md to .html(like using hexo) or use it directly in your .html.(Maybe you can use it with gist for a better effect)
