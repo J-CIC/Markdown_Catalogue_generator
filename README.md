@@ -10,11 +10,11 @@ And then add the js and css file to your html file or markdown file(and turn it 
 You can download the js and css file through my github and modify it to meet your personal needs.    
 I have written some chinese notes on the js file to make it easier to understand.    
 You should use the file like this:     
-> <script src="Catalogue.js"></script>     
+``<script src="Catalogue.js"></script>     
 <link href="Catalogue.css" rel="stylesheet">     
 <script type="text/javascript">     
 	new Catalogue('toc');     
-</script>   
+</script>``   
 #### Some notes:     
 > Note that the Catalogue accepts two arguments:(node_set_id,node_get_id)     
 
@@ -36,11 +36,11 @@ It works when you convert .md to .html(like using hexo) or use it directly in yo
 ``<div id='toc'>``       
 ``</div>``
 引入js文件
-><script src="Catalogue.js"></script>     
+``<script src="Catalogue.js"></script>     
 <link href="Catalogue.css" rel="stylesheet">     
 <script type="text/javascript">     
 	new Catalogue('toc');     
-</script>     
+</script>``     
 
 #### 注意事项     
 注意：Catalogue接受两个参数，第一个参数是要显示目录的元素id，第二个默认为document.id，是要从哪里获取生成目录的信息，简单说就是在哪个节点遍历他和子节点的h1~h6标签     
