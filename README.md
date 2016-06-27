@@ -2,8 +2,10 @@
 Generate Catalogue for .md or .html by js &amp; css
 #### How to use:     
 You just need to simply add this code to your markdown file and turn it into html and you will See the difference!    
-``&lt;div id='toc'>``      
-``&lt;/div>``    
+```html
+<div id='toc'>      
+</div>
+```    
 put this div tag in the place where you want to show the Catalogue
 
 And then add the js and css file to your html file or markdown file(and turn it to html file using hexo or others)    
@@ -11,11 +13,13 @@ You can download the js and css file through my github and modify it to meet you
 I have written some chinese notes on the js file to make it easier to understand.    
 You should use the file like this:   
 
-``&lt;script src="Catalogue.js">&lt;/script>     
-&lt;link href="Catalogue.css" rel="stylesheet">     
-&lt;script type="text/javascript">     
+```javascript
+<script src="Catalogue.js"></script>     
+<link href="Catalogue.css" rel="stylesheet">     
+<script type="text/javascript">     
 	new Catalogue('toc');     
-&lt;/script>``    
+</script>
+```    
 
 #### Some notes:     
 
@@ -37,16 +41,20 @@ It works when you convert .md to .html(like using hexo) or use it directly in yo
 #### 使用方法：          
 在需要生成目录的地方添加div标签，id可以修改，后面js代码对应修改即可      
 
-``&lt;div id='toc'>``       
-``&lt;/div>``
+```html
+<div id='toc'>       
+</div>
+```
 
 引入js文件       
 
-``&lt;script src="Catalogue.js">&lt;/script>     
-&lt;link href="Catalogue.css" rel="stylesheet">     
-&lt;script type="text/javascript">     
+```javascript
+<script src="Catalogue.js"></script>     
+<link href="Catalogue.css" rel="stylesheet">     
+<script type="text/javascript">     
 	new Catalogue('toc');     
-&lt;/script>``     
+</script>
+```     
 
 #### 注意事项     
 
