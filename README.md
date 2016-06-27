@@ -1,6 +1,6 @@
 # Markdown_Catalogue_generator
 Generate Catalogue for .md or .html by js &amp; css
-
+#### How to use:     
 You just need to simply add this code to your markdown file and turn it into html and you will See the difference!    
 ``<div id='toc'>``      
 ``</div>``    
@@ -15,7 +15,7 @@ You should use the file like this:
 <script type="text/javascript">     
 	new Catalogue('toc');     
 </script>   
-      
+#### Some notes:     
 > Note that the Catalogue accepts two arguments:(node_set_id,node_get_id)     
 
 The node_set_id is the id of element that you want to put the Catalogue     
@@ -25,10 +25,13 @@ If node_get_id is null, and it will be replace by document.body.
 > Note that although the js takes the condition the disorder of tag h1~h6, you're still recommended to put the right order.
 
 It works when you convert .md to .html(like using hexo) or use it directly in your .html.(Maybe you can use it with gist for a better effect)
+
 ---     
-功能：给markdown添加目录
-原理：通过遍历给定元素（默认为document.body）的所有h1~h6标签来在指定位置生成目录结构     
-使用方法：     
+#### 功能：     
+给markdown添加目录
+#### 原理：      
+通过遍历给定元素（默认为document.body）的所有h1~h6标签来在指定位置生成目录结构     
+#### 使用方法：          
 在需要生成目录的地方添加div标签，id可以修改，后面js代码对应修改即可      
 ``<div id='toc'>``       
 ``</div>``
@@ -39,6 +42,7 @@ It works when you convert .md to .html(like using hexo) or use it directly in yo
 	new Catalogue('toc');     
 </script>     
 
+#### 注意事项     
 注意：Catalogue接受两个参数，第一个参数是要显示目录的元素id，第二个默认为document.id，是要从哪里获取生成目录的信息，简单说就是在哪个节点遍历他和子节点的h1~h6标签     
 
 注意：当网址中含有#时，js会将#和其后面的内容忽略（这是为了我hexo博客上的方便），若你遇到问题，请检查是不是这个原因        
